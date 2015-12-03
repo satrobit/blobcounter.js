@@ -12,9 +12,9 @@ Just include the `blobcounter.js` anywhere you like :
 ```
 
 ## Usage
-NOTE: Input image must be black and white. ( block blobs with white background )
+NOTE: Input image must be black and white. ( black blobs with white background )
 ```javascript
-var blobs = new blobcounter(canvas); // Don't forget that input image must be all back and white ( block blobs with white background ) . Apply threshold filter to do that . 
+var blobs = new blobcounter(canvas); // Don't forget that input image must be all black and white ( black blobs with white background ) . Apply threshold filter to do that . 
 var res = blobs.detect(1); // Radius area is one pixel . You can change it.
 
 for (var i = 0; i < res.length; i++) {
