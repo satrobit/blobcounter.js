@@ -1,8 +1,8 @@
 blobcounter.js
 =========
+A blob counter library written in pure javascript.
 
-A blob counter library written in pure javascript
-This library helps you find blobs in an image . Inspired by BlobCounter Class in AForge.NET Framework
+This library helps you find blobs in an image . Inspired by BlobCounter Class in AForge.NET Framework .
 
 ## Installation
 
@@ -22,7 +22,7 @@ for (var i = 0; i < res.length; i++) {
 	var mess = res[i].mess; // Number of pixels
 }
 ```
-See the [example.html](../blob/master/example.html) for a practical example .
+See the [example.html](../master/example.html) for a practical example .
 
 ## Contributing
 
