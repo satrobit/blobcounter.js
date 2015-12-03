@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="blobcounter.js"></script>
+
+</head>
+<body>
+	<canvas id="canvas" width="819" height="460" style="float: left"></canvas>
+
+	<script type="text/javascript">
+		var img = new Image();
+
+		img.src = 'blob2.png';
+		var canvas = document.getElementById('canvas');
+		var ctx = canvas.getContext('2d');
+		img.onload = function() {
+			ctx.drawImage(img, 0, 0);
+			img.style.display = 'none';
+
+		};
+
+		function blobdetect() {
+
+			var blobs = new blobcounter(canvas);
+
+			var res = blobs.detect(1);
+
+			console.log(res);
+
+			for (var i = 0; i < res.length; i++) {
+				drawX(res[i].cog.x, res[i].cog.y, canvas);
+
+			}
+
+		}
+
+		function drawX(x, y, c) {
+
+			var ctx = c.getContext("2d");
+
+			var size = 40;
+			ctx.beginPath();
+
+			ctx.strokeStyle = 'red';
+			ctx.lineWidth = 2;
+
+			ctx.arc(x, y, 10, 0, 2 * Math.PI);
+			ctx.moveTo(x - size, y);
+			ctx.lineTo(x + size, y);
+			ctx.stroke();
+
+			ctx.moveTo(x, y - size);
+			ctx.lineTo(x, y + size);
+			ctx.stroke();
+
+		}
+	</script>
+
+	<form>
+		<input type=button value="Start" onClick="blobdetect()">
+	</form>
+</body>
+</html>
