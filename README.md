@@ -10,6 +10,10 @@ Just include the `blobcounter.js` anywhere you like :
 ```html
 <script type="text/javascript" src="blobcounter.js"></script>
 ```
+Or the `blobcounter.min.js`which is minified :
+```html
+<script type="text/javascript" src="blobcounter.min.js"></script>
+```
 
 ## Usage
 NOTE: Input image must be black and white. ( black blobs with white background )
