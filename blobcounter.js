@@ -75,7 +75,7 @@ blobcounter.prototype.detect = function(radius) {
 					particles.push([ idp ]);
 					
 					// If there was a neighbor blob we add the pixel to it
-				} else if (particles_neighbor.length == 1) {
+				} else if (particles_neighbor.length === 1) {
 
 					particles[particles_neighbor[0]].push(idp);
 					
