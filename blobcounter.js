@@ -1,6 +1,6 @@
 /*
  * blobcounter.js v1.0
- * https://github.com/amirhkkh/blobcounter.js
+ * https://github.com/satrobit/blobcounter.js
  * MIT licensed
  *
  * Copyright (C) 2015 Amir Keshavarz
